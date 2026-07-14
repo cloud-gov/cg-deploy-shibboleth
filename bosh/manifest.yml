@@ -9,7 +9,7 @@ releases:
 - name: jammy-snort
   version: latest
 - name: bpm
-  version: bpm
+  version: latest
 
 update:
   canaries: 1
