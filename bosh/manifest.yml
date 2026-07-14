@@ -8,6 +8,8 @@ releases:
   version: latest
 - name: jammy-snort
   version: latest
+- name: bpm
+  version: latest
 
 update:
   canaries: 1
@@ -25,6 +27,8 @@ instance_groups:
 - name: idp
   stemcell: default
   jobs:
+  - name: bpm
+    release: bpm
   - name: snort-config
     release: jammy-snort
     properties:
